@@ -1,0 +1,21 @@
+In the homework assignment, we are using character-based ngrams, i.e., the gram units are characters. Do you expect token-based 
+ngram models to perform better?
+Yes, I expect token-based ngram models to perform better since a sentence is composed of words instead of letters.
+
+What do you think will happen if we provided more data for each category for you to build the language models? What if we only 
+provided more data for Indonesian?
+if we provided more data for each category to build the language models, the models will be more precise, and we need to do more 
+efforts because of the limitation of the float.
+if we only provided more data for Indonesian, the prediction of Indonesian will be more accurate. However, unbalanced data would cause 
+some problems. For instance, there will be lots of zero entry in other labels, and its relative stuff like add 1 smoothing will be unfair.
+
+What do you think will happen if you strip out punctuations and/or numbers? What about converting upper case characters to lower case?
+Since we can't tell the labels from numbers, and upper cases exist often because of the first character in the sentence merely, I think 
+it is good for the language models to strip out punctuations and/or numbers or convert all characters to lower case. Furthermore, it can 
+help us to reduce the size of the language models.
+
+We use 4-gram models in this homework assignment. What do you think will happen if we varied the ngram size, such as using unigrams, 
+bigrams and trigrams?
+It's best to vary the ngram size to the average length of the words in the language. If we reduce the ngram size, the language 
+models may decrease their accuracy since many words are more than 3 characters in the real world and the tuples are easier to be combined 
+and exist.

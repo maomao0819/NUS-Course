@@ -1,0 +1,4 @@
+please
+yes
+NOT yes
+please AND NOT yes
